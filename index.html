@@ -20,6 +20,13 @@
         <link rel="stylesheet" href="./css/style.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- copliet --aos.js 관련 파일을 붙여줘 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     </head>
     <body>
         <a href="#main" class="hidden">본문 바로가기</a>
@@ -40,7 +47,7 @@
                         <li><a href="#">work</a></li>
                         <li><a href="#">contact</a></li>
                     </ul>
-                    <button type="button" class="btn-mㄷnu">
+                    <button type="button" class="btn-menu">
                         <i class="ri-menu-3-line"></i>
                         <i class="hidden">메뉴</i>
                     </button>
@@ -96,64 +103,62 @@
             <!-- //e: about us -->
 
             <section class="team">
-                <div class="inner">
-                    <h3 class="sec-title">team</h3>
+                <h3 class="sec-title">team</h3>
 
-                    <div class="swiper team-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img
-                                        src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/06/08/4b0bdfc6-a639-11ea-8ea0-d7434be00753_image_hires_121748.jpg"
-                                        alt="지수"
-                                    />
-                                </figure>
-                                <dl>
-                                    <dt>Courtney Henry</dt>
-                                    <dd>Founder & CEO</dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img
-                                        src="https://imageio.forbes.com/specials-images/imageserve/65a1340047720a197ed35dd8/Porsche-Sonderwunsch-Haus--The-Taycan-4S-Cross-Turismo-For-Jennie-Ruby-Jane---/0x0.jpg?format=jpg&crop=2312,1734,x0,y208,safe&width=960"
-                                        alt="제니"
-                                    />
-                                </figure>
-                                <dl>
-                                    <dt>Devon Lane</dt>
-                                    <dd>President of Sales</dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img
-                                        src="https://media.vanityfair.com/photos/5f8a0436fcee2a89680237c6/1:1/w_1000,h_1000,c_limit/Lisa-Blackpink-MAC-Lede.jpg"
-                                        alt="리사"
-                                    />
-                                </figure>
-                                <dl>
-                                    <dt>Wade Warren</dt>
-                                    <dd>Web Designer</dd>
-                                </dl>
-                            </div>
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img
-                                        src="https://dam.mediacorp.sg/image/upload/s--p704OKC2--/c_crop,h_1536,w_2048,x_0,y_0/c_fill,g_auto,h_622,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2024/11/26/1732008240cropped3577x2682.jpg?itok=GlLVH628"
-                                        alt="로제"
-                                    />
-                                </figure>
-                                <dl>
-                                    <dt>Arlene McCoy</dt>
-                                    <dd>Marketing Coordinator</dd>
-                                </dl>
-                            </div>
+                <div class="swiper team-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure>
+                                <img
+                                    src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/06/08/4b0bdfc6-a639-11ea-8ea0-d7434be00753_image_hires_121748.jpg"
+                                    alt="지수"
+                                />
+                            </figure>
+                            <dl>
+                                <dt>Courtney Henry</dt>
+                                <dd>Founder & CEO</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img
+                                    src="https://imageio.forbes.com/specials-images/imageserve/65a1340047720a197ed35dd8/Porsche-Sonderwunsch-Haus--The-Taycan-4S-Cross-Turismo-For-Jennie-Ruby-Jane---/0x0.jpg?format=jpg&crop=2312,1734,x0,y208,safe&width=960"
+                                    alt="제니"
+                                />
+                            </figure>
+                            <dl>
+                                <dt>Devon Lane</dt>
+                                <dd>President of Sales</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img
+                                    src="https://media.vanityfair.com/photos/5f8a0436fcee2a89680237c6/1:1/w_1000,h_1000,c_limit/Lisa-Blackpink-MAC-Lede.jpg"
+                                    alt="리사"
+                                />
+                            </figure>
+                            <dl>
+                                <dt>Wade Warren</dt>
+                                <dd>Web Designer</dd>
+                            </dl>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure>
+                                <img
+                                    src="https://dam.mediacorp.sg/image/upload/s--p704OKC2--/c_crop,h_1536,w_2048,x_0,y_0/c_fill,g_auto,h_622,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2024/11/26/1732008240cropped3577x2682.jpg?itok=GlLVH628"
+                                    alt="로제"
+                                />
+                            </figure>
+                            <dl>
+                                <dt>Arlene McCoy</dt>
+                                <dd>Marketing Coordinator</dd>
+                            </dl>
                         </div>
                     </div>
-
-                    <a href="" class="btn">work with us</a>
                 </div>
+
+                <a href="" class="btn">work with us</a>
             </section>
             <!-- //e: team -->
 
